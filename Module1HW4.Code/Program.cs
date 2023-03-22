@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             // Создание массива заданной длины
             int arrLength;
@@ -52,7 +52,6 @@
             ReplaceToBigLetters(arrEvenLetters, arrEvenFinal, out counterEven);
             ReplaceToBigLetters(arrOddLetters, arrOddFinal, out counterOdd);
 
-
             CheckForMaxBigLetters();
             Console.WriteLine("--------------");
 
@@ -68,6 +67,7 @@
                 {
                     Console.Write(item + " ");
                 }
+
                 Console.WriteLine();
             }
 
@@ -77,6 +77,7 @@
                 {
                     Console.Write(item + " ");
                 }
+
                 Console.WriteLine();
             }
 
@@ -100,6 +101,7 @@
                             break;
                         }
                     }
+
                     Console.WriteLine("Не удалось распознать число, попробуйте еще раз.");
                 }
             }
@@ -111,6 +113,7 @@
                 {
                     arr[i] = new Random().Next(1, 27);
                 }
+
                 return arr;
             }
 
@@ -130,10 +133,12 @@
                         even++;
                     }
                 }
+
                 if (even == 0)
                 {
                     Console.WriteLine("Отсутсвуют четные числа в массиве.");
                 }
+
                 if (odd == 0)
                 {
                     Console.WriteLine("Отсутсвуют нечетные числа в массиве.");
@@ -201,6 +206,7 @@
                         }
                     }
                 }
+
                 return arr;
             }
 
